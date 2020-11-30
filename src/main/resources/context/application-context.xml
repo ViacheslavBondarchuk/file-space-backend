@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+    <tx:annotation-driven/>
+    <mybatis:scan base-package="hbv.com.ua.repository.mybatis" factory-ref="sqlSessionFactoryBean"/>
+
+    <!--properties util-->
+    <bean id="propertiesUtil" class="hbv.com.ua.util.ApplicationPropertiesUtil" factory-method="getInstance"/>
+
+    <!--sourcesPlaceholderConfigurer-->
+    <bean id="sourcesPlaceholderConfigurer" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:properties/*.properties</value>
+            </list>
+        </property>
+        <property name="trimValues" value="true"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+
+    <!--undertow container-->
+    <bean id="undertowContainer" class="hbv.com.ua.container.UndertowContainer" init-method="init" destroy-method="destroy"/>
+
+    <!--datasource-->
+    <bean id="dataSource" class="org.apache.ibatis.datasource.pooled.PooledDataSource" scope="singleton">
+        <property name="username" value="${mybatis.postgres.username}"/>
+        <property name="password" value="${mybatis.postgres.password}"/>
+        <property name="driver" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost/${mybatis.postgres.db}"/>
+    </bean>
+
+    <!--transaction manager-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" scope="singleton">
+        <constructor-arg name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--sqlSessionFactoryBean-->
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean" scope="singleton">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="transactionFactory">
+            <bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory"/>
+        </property>
+        <property name="configLocation" value="classpath:config/mybatis/sql-config.xml"/>
+        <property name="mapperLocations" value="classpath:config/mybatis/mapper/*-mapper.xml"/>
+    </bean>
+
+    <!--flyway configuration-->
+    <bean id="classicConfiguration" class="org.flywaydb.core.api.configuration.ClassicConfiguration">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="baselineOnMigrate" value="true"/>
+        <property name="encoding" value="UTF-8"/>
+    </bean>
+
+    <!--flyway-->
+    <bean id="flyway" class="org.flywaydb.core.Flyway" init-method="migrate" scope="singleton">
+        <constructor-arg name="configuration" ref="classicConfiguration"/>
+    </bean>
+</beans>
