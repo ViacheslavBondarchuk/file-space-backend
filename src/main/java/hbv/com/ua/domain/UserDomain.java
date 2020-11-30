@@ -1,15 +1,16 @@
 package hbv.com.ua.domain;
 
-public class User {
+public class UserDomain {
     private Long id;
     private String username;
+    private String password;
     private String firstname;
     private String lastname;
     private String email;
     private String phone;
 
     public static Builder builder() {
-        return new User().new Builder();
+        return new UserDomain().new Builder();
     }
 
     public Long getId() {
@@ -26,6 +27,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getFirstname() {
@@ -63,37 +72,42 @@ public class User {
     public class Builder {
 
         protected Builder setId(final Long id) {
-            User.this.setId(id);
+            UserDomain.this.setId(id);
             return this;
         }
 
         protected Builder setUsername(final String username) {
-            User.this.setUsername(username);
+            UserDomain.this.setUsername(username);
+            return this;
+        }
+
+        protected Builder setPassword(final String password) {
+            UserDomain.this.setPassword(password);
             return this;
         }
 
         protected Builder setFirstname(final String firstname) {
-            User.this.setFirstname(firstname);
+            UserDomain.this.setFirstname(firstname);
             return this;
         }
 
         protected Builder setLastname(final String lastname) {
-            User.this.setLastname(lastname);
+            UserDomain.this.setLastname(lastname);
             return this;
         }
 
         protected Builder setEmail(final String email) {
-            User.this.setEmail(email);
+            UserDomain.this.setEmail(email);
             return this;
         }
 
         protected Builder setPhone(final String phone) {
-            User.this.setPhone(phone);
+            UserDomain.this.setPhone(phone);
             return this;
         }
 
-        protected User build(){
-            return User.this;
+        protected UserDomain build(){
+            return UserDomain.this;
         }
     }
 
