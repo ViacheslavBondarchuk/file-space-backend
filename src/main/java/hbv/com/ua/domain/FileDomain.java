@@ -1,8 +1,11 @@
 package hbv.com.ua.domain;
 
-public class FileDomain {
+import java.io.Serializable;
+
+public class FileDomain implements Serializable {
     private Long id;
     private Long user_id;
+    private byte[] content;
     private String filename;
     private FileType fileType;
     private Long parentId;
@@ -22,6 +25,14 @@ public class FileDomain {
 
     public void setUser_id(Long user_id) {
         this.user_id = user_id;
+    }
+
+    public byte[] getContent() {
+        return content;
+    }
+
+    public void setContent(byte[] content) {
+        this.content = content;
     }
 
     public String getFilename() {
@@ -55,4 +66,5 @@ public class FileDomain {
     public void setChildId(Long childId) {
         this.childId = childId;
     }
+
 }
