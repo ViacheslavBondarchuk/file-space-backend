@@ -2,10 +2,8 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <properties resource="application-global.properties"/>
-
     <typeHandlers>
         <typeHandler handler="hbv.com.ua.config.mybatis.handler.FileTypeHandler"/>
+        <typeHandler handler="hbv.com.ua.config.mybatis.handler.AuthorityArrayTypeHandler"/>
     </typeHandlers>
-
 </configuration>

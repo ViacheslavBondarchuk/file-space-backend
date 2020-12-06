@@ -3,4 +3,43 @@
 
 <mapper namespace="hbv.com.ua.repository.mybatis.impl.UserRepository">
 
+    <resultMap id="userMap" type="hbv.com.ua.domain.UserDomain">
+        <id column="id" property="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="firstName" column="first_name"/>
+        <result property="lastName" column="last_name"/>
+        <result property="phone" column="phone"/>
+        <result property="email" column="email"/>
+        <result property="authorities" column="authorities" javaType="java.util.Set"
+                jdbcType="ARRAY" typeHandler="hbv.com.ua.config.mybatis.handler.AuthorityArrayTypeHandler"/>
+        <result property="isEnabled" column="is_enabled"/>
+        <result property="isAccountNonLocked" column="is_account_non_locked"/>
+        <result property="isAccountNonExpired" column="is_account_non_expired"/>
+        <result property="isCredentialsNonExpired" column="is_credentials_non_expired"/>
+    </resultMap>
+
+    <select id="findByUsername" parameterType="java.lang.String" resultMap="userMap" statementType="CALLABLE">
+        select usr.*, array_agg(name order by usr.id) as authorities
+            from users as usr join authorities as auth on auth.user_id = usr.id where usr.username = #{username} group by usr.id, auth.user_id;
+    </select>
+
+    <select id="read" parameterType="java.lang.Long" resultMap="userMap" statementType="CALLABLE">
+        select  usr.*, array_agg(name order by usr.id) as authorities
+            from users as usr join authorities as auth on auth.user_id = usr.id where usr.id = #{id} group by  usr.id, auth.user_id;
+    </select>
+
+    <insert id="create" parameterType="hbv.com.ua.domain.UserDomain" statementType="CALLABLE">
+        <selectKey order="BEFORE" statementType="PREPARED" keyProperty="id" resultType="java.lang.Long">
+            select nextval('users_id_seq');
+        </selectKey>
+
+        insert into users (id, username, password, firstname, lastname, email, phone, is_enabled, is_account_non_locked, is_account_non_expired, is_credentials_non_expired)
+            values (#{id} ,#{username}, #{password}, #{firstname}, #{lastname}, #{email} ,#{phone}, #{isEnabled}, #{isAccountNonLocked}, #{isAccountNonExpired}, #{isCredentialsNonExpired});
+
+            <foreach collection="authorities" item="authority" index="index">
+                insert into authorities (user_id, name) values (#{id}, #{authority.name});
+            </foreach>
+    </insert>
+
 </mapper>

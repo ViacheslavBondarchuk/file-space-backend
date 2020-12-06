@@ -16,7 +16,8 @@ public class HttpExchangeUtil {
 
     public static String getPathParameter(final HttpServerExchange exchange, final String parameter) {
         return Optional.of(exchange.getPathParameters().get(parameter))
-                .orElseThrow(() -> new RuntimeException(String.format("Path parameter %s has been not found", parameter))).getFirst();
+                .orElseThrow(() -> new RuntimeException(String.format("Path parameter %s has been not found", parameter)))
+                .getFirst();
     }
 
     public static Map<String, Deque<String>> getAllRequestParameters(final HttpServerExchange exchange) {

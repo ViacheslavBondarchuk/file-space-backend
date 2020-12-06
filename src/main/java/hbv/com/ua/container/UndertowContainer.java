@@ -33,12 +33,13 @@ public class UndertowContainer {
                 .addListener(listenerBuilder)
                 .setHandler(httpServerExchange -> {
                     ActionServiceFactory
+                            .getInstance()
                             .getActionService(HttpExchangeUtil.getRequestParameter(httpServerExchange, ACTION_PARAMETER))
                             .handle(httpServerExchange);
                 }).build();
         undertow.start();
 
-        logger.info(String.format("Undertow started on %s:%s",InetAddress.getLocalHost().getHostAddress(), PORT));
+        logger.info(String.format("Undertow started on %s:%s", InetAddress.getLocalHost().getHostAddress(), PORT));
     }
 
     protected void destroy() {

@@ -1,6 +1,13 @@
 package hbv.com.ua.domain;
 
-public class UserDomain {
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
+
+public class UserDomain implements UserDetails {
     private Long id;
     private String username;
     private String password;
@@ -8,6 +15,12 @@ public class UserDomain {
     private String lastname;
     private String email;
     private String phone;
+
+    private boolean isEnabled;
+    private boolean isAccountNonLocked;
+    private boolean isAccountNonExpired;
+    private boolean isCredentialsNonExpired;
+    private Set<Authority> authorities;
 
     public static Builder builder() {
         return new UserDomain().new Builder();
@@ -69,6 +82,56 @@ public class UserDomain {
         this.phone = phone;
     }
 
+
+    @Override
+    public boolean isEnabled() {
+        return isEnabled;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return isAccountNonLocked;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return isAccountNonExpired;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return isCredentialsNonExpired;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return authorities;
+    }
+
+    public void setEnabled(boolean enabled) {
+        isEnabled = enabled;
+    }
+
+    public void setAccountNonLocked(boolean accountNonLocked) {
+        isAccountNonLocked = accountNonLocked;
+    }
+
+    public void setAccountNonExpired(boolean accountNonExpired) {
+        isAccountNonExpired = accountNonExpired;
+    }
+
+    public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+        isCredentialsNonExpired = credentialsNonExpired;
+    }
+
+    public void setAuthority(Authority authority) {
+        this.authorities = Collections.singleton(authority);
+    }
+
+    public void setAuthorities(Set<Authority> authorities) {
+        this.authorities = authorities;
+    }
+
     public class Builder {
 
         protected Builder setId(final Long id) {
@@ -103,6 +166,36 @@ public class UserDomain {
 
         protected Builder setPhone(final String phone) {
             UserDomain.this.setPhone(phone);
+            return this;
+        }
+
+        protected Builder setEnabled(final boolean isEnable) {
+            UserDomain.this.setEnabled(isEnable);
+            return this;
+        }
+
+        protected Builder setAccountNonLocked(final boolean isAccountNonLocked) {
+            UserDomain.this.setAccountNonLocked(isAccountNonLocked);
+            return this;
+        }
+
+        protected Builder setAccountNonExpired(final boolean isAccountNonExpired) {
+            UserDomain.this.setAccountNonExpired(isAccountNonExpired);
+            return this;
+        }
+
+        protected Builder setCredentialsNonExpired(final boolean isCredentialsNonExpired) {
+            UserDomain.this.setCredentialsNonExpired(isCredentialsNonExpired);
+            return this;
+        }
+
+        protected Builder setAuthority(final Authority authority) {
+            UserDomain.this.setAuthority(authority);
+            return this;
+        }
+
+        private Builder setAuthorities(final Set<Authority> authorities){
+            UserDomain.this.setAuthorities(authorities);
             return this;
         }
 

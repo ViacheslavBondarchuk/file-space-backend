@@ -9,8 +9,5 @@
         <module name="file-space-backend" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="file-space-backend" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
