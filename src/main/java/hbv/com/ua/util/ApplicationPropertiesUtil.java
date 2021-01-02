@@ -25,8 +25,13 @@ public class ApplicationPropertiesUtil {
     }
 
     public static ApplicationPropertiesUtil getInstance() {
-        if (instance == null)
-            instance = new ApplicationPropertiesUtil();
+        if (instance == null) {
+            synchronized (ApplicationPropertiesUtil.class) {
+                if(instance == null) {
+                    instance = new ApplicationPropertiesUtil();
+                }
+            }
+        }
         return instance;
     }
 
