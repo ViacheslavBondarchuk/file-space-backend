@@ -7,10 +7,10 @@ import org.apache.ibatis.javassist.NotFoundException;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-public abstract class AbstractMybatisService< T, ID, R extends CRUD< T, ID > > {
+public abstract class AbstractAsyncMybatisService< T, ID, R extends CRUD< T, ID > > {
 	protected R repository;
 
-	public AbstractMybatisService( R repository ) {
+	public AbstractAsyncMybatisService( R repository ) {
 		this.repository = repository;
 	}
 

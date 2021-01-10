@@ -7,7 +7,7 @@
 
     <context:component-scan base-package="hbv.com.ua"/>
     <context:annotation-config/>
-    <tx:annotation-driven/>
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="jdbcTransactionManager"/>
     <mybatis:scan base-package="hbv.com.ua.repository.mybatis.impl" factory-ref="sqlSessionFactoryBean"/>
 
     <!--sourcesPlaceholderConfigurer-->
@@ -44,6 +44,13 @@
     <!--sqlSessionTemplate-->
     <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg ref="sqlSessionFactoryBean"/>
+    </bean>
+
+    <bean id="jdbcTransactionManager" class="org.springframework.jdbc.support.JdbcTransactionManager">
+        <property name="dataSource" ref="hikariDataSource"/>
+        <property name="rollbackOnCommitFailure" value="true"/>
+        <property name="nestedTransactionAllowed" value="true"/>
+        <property name="validateExistingTransaction" value="true"/>
     </bean>
 
     <!--classicConfiguration-->

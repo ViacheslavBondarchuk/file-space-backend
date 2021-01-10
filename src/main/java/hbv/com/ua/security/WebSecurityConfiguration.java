@@ -1,6 +1,6 @@
 package hbv.com.ua.security;
 
-import hbv.com.ua.service.mybatis.impl.MybatisUserService;
+import hbv.com.ua.service.mybatis.impl.AsyncMybatisUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -13,10 +13,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
-    private MybatisUserService mybatisUserService;
+    private AsyncMybatisUserService mybatisUserService;
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public @Autowired void setMybatisUserService(MybatisUserService mybatisUserService) {
+    public @Autowired void setMybatisUserService( AsyncMybatisUserService mybatisUserService) {
         this.mybatisUserService = mybatisUserService;
     }
     public @Autowired void setbCryptPasswordEncoder(BCryptPasswordEncoder bCryptPasswordEncoder) {
