@@ -11,27 +11,27 @@ import java.util.stream.Collectors;
 
 public abstract class AbstractHttpController implements HttpHandler {
 
-    @Override
-    public final void handleRequest(HttpServerExchange httpServerExchange) throws Exception {
-        String requestHttpMethodType = String.valueOf(httpServerExchange.getRequestMethod()).toUpperCase();
+	@Override
+	public final void handleRequest( HttpServerExchange httpServerExchange ) throws Exception {
+		String requestHttpMethodType = String.valueOf( httpServerExchange.getRequestMethod( ) ).toUpperCase( );
 
-        List<Method> methods = Arrays.stream(this.getClass().getMethods())
-                .filter(method -> method.isAnnotationPresent(HttpMethod.class))
-                .collect(Collectors.toList());
+		List< Method > methods = Arrays.stream( this.getClass( ).getMethods( ) )
+				.filter( method -> method.isAnnotationPresent( HttpMethod.class ) )
+				.collect( Collectors.toList( ) );
 
-        System.out.println();
+		System.out.println( );
 
-        for (Method method : methods) {
-            String methodType = method.getAnnotation(HttpMethod.class)
-                    .type()
-                    .toString()
-                    .toUpperCase();
+		for ( Method method : methods ) {
+			String methodType = method.getAnnotation( HttpMethod.class )
+					.type( )
+					.toString( )
+					.toUpperCase( );
 
-            if (requestHttpMethodType.equals(methodType)) {
-                method.invoke(this, httpServerExchange);
-            }
+			if ( requestHttpMethodType.equals( methodType ) ) {
+				method.invoke( this, httpServerExchange );
+			}
 
-        }
+		}
 
-    }
+	}
 }

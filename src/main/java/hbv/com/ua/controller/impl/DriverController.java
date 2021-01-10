@@ -5,11 +5,12 @@ import hbv.com.ua.annotation.HttpMethod;
 import hbv.com.ua.controller.AbstractHttpController;
 import io.undertow.server.HttpServerExchange;
 
-@HttpController(path = "/hello")
+@HttpController(path = "/drivers")
 public class DriverController extends AbstractHttpController {
 
     @HttpMethod(type = HttpMethod.HttpMethodType.GET)
     public void get(HttpServerExchange httpServerExchange) {
+
     }
 
 }

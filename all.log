@@ -1,78 +1,87 @@
-2021-01-02 20:48:21.283 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@315c0b0e
-2021-01-02 20:48:22.209 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\hbv\com\ua\annotation\HttpController.class]
-2021-01-02 20:48:22.240 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\hbv\com\ua\controller\impl\DriverController.class]
-2021-01-02 20:48:22.240 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\hbv\com\ua\controller\impl\UserController.class]
-2021-01-02 20:48:22.256 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\hbv\com\ua\filter\HeaderHttpFilter.class]
-2021-01-02 20:48:22.303 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\hbv\com\ua\security\WebSecurityConfiguration.class]
-2021-01-02 20:48:22.319 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\hbv\com\ua\service\mybatis\impl\MybatisUserService.class]
-2021-01-02 20:48:22.444 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 24 bean definitions from class path resource [context/application-context.xml]
-2021-01-02 20:48:22.569 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2021-01-02 20:48:23.260 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sourcesPlaceholderConfigurer'
-2021-01-02 20:48:23.385 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.username' in PropertySource 'localProperties' with value of type String
-2021-01-02 20:48:23.385 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.password' in PropertySource 'localProperties' with value of type String
-2021-01-02 20:48:23.385 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.url' in PropertySource 'localProperties' with value of type String
-2021-01-02 20:48:23.385 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.db' in PropertySource 'localProperties' with value of type String
-2021-01-02 20:48:23.385 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-2021-01-02 20:48:23.385 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'conversionServicePostProcessor'
-2021-01-02 20:48:23.401 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-2021-01-02 20:48:23.401 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
-2021-01-02 20:48:23.432 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2021-01-02 20:48:23.448 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2021-01-02 20:48:23.463 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2021-01-02 20:48:23.573 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'driverController'
-2021-01-02 20:48:23.588 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2021-01-02 20:48:23.588 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
-2021-01-02 20:48:23.651 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
-2021-01-02 20:48:23.651 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'headerHttpFilter'
-2021-01-02 20:48:23.682 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webSecurityConfiguration'
-2021-01-02 20:48:23.838 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2021-01-02 20:48:23.838 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'objectPostProcessor'
-2021-01-02 20:48:23.854 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
-2021-01-02 20:48:23.869 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@f849befe'
-2021-01-02 20:48:23.923 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
-2021-01-02 20:48:23.937 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
-2021-01-02 20:48:23.947 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@315c0b0e'
-2021-01-02 20:48:23.957 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
-2021-01-02 20:48:23.959 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@315c0b0e'
-2021-01-02 20:48:23.966 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
-2021-01-02 20:48:23.968 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@315c0b0e'
-2021-01-02 20:48:24.001 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mybatisUserService'
-2021-01-02 20:48:24.026 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'bCryptPasswordEncoder'
-2021-01-02 20:48:24.044 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
-2021-01-02 20:48:24.076 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertiesUtil'
-2021-01-02 20:48:24.076 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'pooledDataSource'
-2021-01-02 20:48:24.138 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-02 20:48:24.138 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-02 20:48:24.138 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-02 20:48:24.154 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariDataSource'
-2021-01-02 20:48:24.294 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
-2021-01-02 20:48:24.669 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/mybatis/sql-config.xml]'
-2021-01-02 20:48:24.716 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\ADMIN\IdeaProjects\file-space-backend\target\classes\config\mybatis\mapper\user-mapper.xml]'
-2021-01-02 20:48:24.732 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionTemplate'
-2021-01-02 20:48:24.779 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'classicConfiguration'
-2021-01-02 20:48:24.888 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'undertowContainer'
-2021-01-02 20:48:24.968 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-2021-01-02 20:48:24.987 [main] INFO  io.undertow - starting server: Undertow - 2.1.0.Final
-2021-01-02 20:48:25.011 [main] INFO  org.xnio - XNIO version 3.8.0.Final
-2021-01-02 20:48:25.055 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
-2021-01-02 20:48:25.641 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2021-01-02 20:48:25.688 [XNIO-1 I/O-1] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.WindowsSelectorImpl@c3275e0d
-2021-01-02 20:48:25.688 [XNIO-1 I/O-2] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.WindowsSelectorImpl@76f05977
-2021-01-02 20:48:25.688 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 127.0.0.1 and port 8080
-2021-01-02 20:48:25.688 [XNIO-1 I/O-3] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.WindowsSelectorImpl@120efccb
-2021-01-02 20:48:25.688 [XNIO-1 Accept] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.WindowsSelectorImpl@1cc82887
-2021-01-02 20:48:25.688 [XNIO-1 I/O-4] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.WindowsSelectorImpl@fe0dadf4
-2021-01-02 20:48:25.844 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authenticationManagerBuilder'
-2021-01-02 20:48:25.844 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
-2021-01-02 20:48:25.844 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@315c0b0e'
-2021-01-02 20:48:25.860 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'
-2021-01-02 20:48:26.015 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'autowiredWebSecurityConfigurersIgnoreParents'
-2021-01-02 20:48:26.022 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'autowiredWebSecurityConfigurersIgnoreParents' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@f849befe'
-2021-01-02 20:48:26.175 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'delegatingApplicationListener'
-2021-01-02 20:48:26.175 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springSecurityFilterChain'
-2021-01-02 20:48:26.535 [main] DEBUG org.springframework.security.web.access.expression.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/users', POST]
-2021-01-02 20:48:26.550 [main] DEBUG org.springframework.security.web.access.expression.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [fullyAuthenticated] for any request
-2021-01-02 20:48:26.581 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d0c1466, org.springframework.security.web.context.SecurityContextPersistenceFilter@a56fdb82, org.springframework.security.web.header.HeaderWriterFilter@ed12732f, org.springframework.security.web.csrf.CsrfFilter@45d341e8, org.springframework.security.web.authentication.logout.LogoutFilter@8e9e9b23, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e3d6c3a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@b69aadb2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@ba346632, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ffd9680, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e8bb0e4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@694041e5, org.springframework.security.web.session.SessionManagementFilter@27ce8eaf, org.springframework.security.web.access.ExceptionTranslationFilter@915cc667, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f22adbf9]
-2021-01-02 20:48:26.597 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webSecurityExpressionHandler'
-2021-01-02 20:48:26.597 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'privilegeEvaluator'
-2021-01-02 20:48:
+2021-01-10 22:46:44.298 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9e6fed01
+2021-01-10 22:46:44.566 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/annotation/HttpController.class]
+2021-01-10 22:46:44.573 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/controller/impl/DriverController.class]
+2021-01-10 22:46:44.574 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/controller/impl/UserController.class]
+2021-01-10 22:46:44.577 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/filter/HeaderHttpFilter.class]
+2021-01-10 22:46:44.590 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/security/WebSecurityConfiguration.class]
+2021-01-10 22:46:44.592 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/service/mybatis/impl/MybatisUserService.class]
+2021-01-10 22:46:44.626 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 26 bean definitions from class path resource [context/application-context.xml]
+2021-01-10 22:46:44.659 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-01-10 22:46:44.762 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-01-10 22:46:44.785 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sourcesPlaceholderConfigurer'
+2021-01-10 22:46:44.857 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-01-10 22:46:44.860 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/repository/mybatis/impl/UserRepository.class]
+2021-01-10 22:46:44.861 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userRepository' and 'hbv.com.ua.repository.mybatis.impl.UserRepository' mapperInterface
+2021-01-10 22:46:44.934 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.username' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.935 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.password' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.935 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.url' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.935 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.host' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.936 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.port' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.937 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.db' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.938 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.config.driver' in PropertySource 'localProperties' with value of type String
+2021-01-10 22:46:44.938 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-01-10 22:46:44.939 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'conversionServicePostProcessor'
+2021-01-10 22:46:44.941 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-01-10 22:46:44.942 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2021-01-10 22:46:44.957 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-01-10 22:46:44.958 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-01-10 22:46:44.961 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-01-10 22:46:44.987 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'driverController'
+2021-01-10 22:46:44.990 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2021-01-10 22:46:44.992 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2021-01-10 22:46:45.004 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
+2021-01-10 22:46:45.018 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mybatisUserService'
+2021-01-10 22:46:45.021 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepository'
+2021-01-10 22:46:45.028 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
+2021-01-10 22:46:45.029 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariDataSource'
+2021-01-10 22:46:45.037 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'pooledDataSource'
+2021-01-10 22:46:45.056 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-10 22:46:45.056 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-10 22:46:45.057 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-10 22:46:45.057 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-10 22:46:45.159 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/mybatis/sql-config.xml]'
+2021-01-10 22:46:45.212 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/var/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/config/mybatis/mapper/user-mapper.xml]'
+2021-01-10 22:46:45.224 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'mybatisUserService' via constructor to bean named 'userRepository'
+2021-01-10 22:46:45.228 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'bCryptPasswordEncoder'
+2021-01-10 22:46:45.231 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'headerHttpFilter'
+2021-01-10 22:46:45.235 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webSecurityConfiguration'
+2021-01-10 22:46:45.249 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'objectPostProcessor'
+2021-01-10 22:46:45.249 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
+2021-01-10 22:46:45.251 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@5aef6e43'
+2021-01-10 22:46:45.256 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
+2021-01-10 22:46:45.260 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
+2021-01-10 22:46:45.261 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@9e6fed01'
+2021-01-10 22:46:45.263 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
+2021-01-10 22:46:45.264 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@9e6fed01'
+2021-01-10 22:46:45.265 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
+2021-01-10 22:46:45.266 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.context.support.ClassPathXmlApplicationContext@9e6fed01'
+2021-01-10 22:46:45.273 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2021-01-10 22:46:45.284 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertiesUtil'
+2021-01-10 22:46:58.450 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionTemplate'
+2021-01-10 22:46:58.460 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'classicConfiguration'
+2021-01-10 22:46:58.509 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'flyway'
+2021-01-10 22:46:58.527 [main] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/callback' ...
+2021-01-10 22:46:58.528 [main] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner - Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@7803574c ...
+2021-01-10 22:46:58.528 [main] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner - Unable to resolve location classpath:db/callback.
+2021-01-10 22:46:58.529 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'undertowContainer'
+2021-01-10 22:46:58.545 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2021-01-10 22:46:58.551 [main] INFO  io.undertow - starting server: Undertow - 2.1.0.Final
+2021-01-10 22:46:58.557 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-01-10 22:46:58.570 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-01-10 22:46:58.588 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-01-10 22:46:58.599 [XNIO-1 I/O-3] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.EPollSelectorImpl@48e189b6
+2021-01-10 22:46:58.599 [XNIO-1 I/O-1] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.EPollSelectorImpl@b565745d
+2021-01-10 22:46:58.599 [XNIO-1 I/O-5] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-5', selector sun.nio.ch.EPollSelectorImpl@8b7d30ab
+2021-01-10 22:46:58.599 [XNIO-1 I/O-2] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.EPollSelectorImpl@c110cbf5
+2021-01-10 22:46:58.599 [XNIO-1 I/O-4] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.EPollSelectorImpl@8b7b5f7e
+2021-01-10 22:46:58.599 [XNIO-1 I/O-7] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-7', selector sun.nio.ch.EPollSelectorImpl@8435b3d8
+2021-01-10 22:46:58.599 [XNIO-1 I/O-8] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-8', selector sun.nio.ch.EPollSelectorImpl@d5445bd9
+2021-01-10 22:46:58.600 [XNIO-1 I/O-10] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-10', selector sun.nio.ch.EPollSelectorImpl@6b6270b9
+2021-01-10 22:46:58.599 [XNIO-1 I/O-6] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-6', selector sun.nio.ch.EPollSelectorImpl@82d588f8
+2021-01-10 22:46:58.600 [XNIO-1 I/O-9] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-9', selector sun.nio.ch.EPollSelectorImpl@b9d3dfc2
+2021-01-10 22:46:58.600 [XNIO-1 Accept] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.EPollSelectorImpl@ce207b22
+2021-01-10 22:46:58.600 [XNIO-1 I/O-12] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-12', selector sun.nio.ch.EPollSelectorImpl@c5018d02
+2021-01-10 22:46:58.601 [XNIO-1 I/O-11] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-11', selector sun.nio.ch.EPollSelectorImpl@fc46e81e
+2021-01-10 22:46:58.601 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 127.0.0.1 and port 8080
+2021-01-10 22:46:58.634 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authenticationManagerBuilder'
+2021-01-10 22:46:58.635 [main] DEBUG org.springframewo
