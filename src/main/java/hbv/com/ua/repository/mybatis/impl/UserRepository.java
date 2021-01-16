@@ -1,15 +1,15 @@
 package hbv.com.ua.repository.mybatis.impl;
 
-import hbv.com.ua.domain.UserDomain;
+import hbv.com.ua.model.User;
 import hbv.com.ua.repository.mybatis.CRUD;
 
 import java.util.Optional;
 
-public interface UserRepository extends CRUD<UserDomain, Long> {
+public interface UserRepository extends CRUD<User, Long > {
 
-    Optional<UserDomain> findByUsername(final String username);
+	Optional<User> findByUsername(final String username );
 
-    Optional<UserDomain> findByEmail(final String email);
+	Optional<User> findByEmail(final String email );
 
-    Optional<UserDomain> findByPhone(final String phone);
+	Optional<User> findByPhone(final String phone );
 }
