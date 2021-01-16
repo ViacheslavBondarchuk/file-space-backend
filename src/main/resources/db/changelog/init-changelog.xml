@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet id="init-changelog" author="Viacheslav Bondarchuk">
+
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="users"/>
+                <tableExists tableName="authorities"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="users">
+            <column name="id" type="serial" autoIncrement="true">
+                <constraints primaryKey="true" unique="true"/>
+            </column>
+            <column name="username" type="text">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="password" type="text">
+                <constraints nullable="false" unique="false"/>
+            </column>
+            <column name="email" type="text">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="isEnabled" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="isAccountNonLocked" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="isAccountNonExpired" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="isCredentialsNonExpired" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="authorities">
+            <column name="id" type="serial" autoIncrement="true">
+                <constraints primaryKey="true" unique="true"/>
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints foreignKeyName="id" validateForeignKey="true" references="users" deleteCascade="true"/>
+            </column>
+            <column name="name" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

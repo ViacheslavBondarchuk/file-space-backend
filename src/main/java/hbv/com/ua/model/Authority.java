@@ -1,4 +1,4 @@
-package hbv.com.ua.domain;
+package hbv.com.ua.model;
 
 import org.springframework.security.core.GrantedAuthority;
 

@@ -46,6 +46,7 @@
         <constructor-arg ref="sqlSessionFactoryBean"/>
     </bean>
 
+    <!--jdbcTransactionManager-->
     <bean id="jdbcTransactionManager" class="org.springframework.jdbc.support.JdbcTransactionManager">
         <property name="dataSource" ref="hikariDataSource"/>
         <property name="rollbackOnCommitFailure" value="true"/>
@@ -53,16 +54,11 @@
         <property name="validateExistingTransaction" value="true"/>
     </bean>
 
-    <!--classicConfiguration-->
-    <bean id="classicConfiguration" class="org.flywaydb.core.api.configuration.ClassicConfiguration">
+    <!--springLiquibase-->
+    <bean id="springLiquibase" class="liquibase.integration.spring.SpringLiquibase">
         <property name="dataSource" ref="hikariDataSource"/>
         <property name="defaultSchema" value="public"/>
-        <property name="encoding" value="UTF-8"/>
-    </bean>
-
-    <!--flyway-->
-    <bean id="flyway" class="org.flywaydb.core.Flyway">
-        <constructor-arg index="0" ref="classicConfiguration"/>
+        <property name="changeLog" value="db/changelog/master-changelog.xml"/>
     </bean>
 
     <!--undertow container-->

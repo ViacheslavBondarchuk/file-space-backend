@@ -3,7 +3,7 @@ package hbv.com.ua.controller.impl;
 import hbv.com.ua.annotation.HttpController;
 import hbv.com.ua.annotation.HttpMethod;
 import hbv.com.ua.controller.AbstractHttpController;
-import hbv.com.ua.domain.UserDomain;
+import hbv.com.ua.model.User;
 import hbv.com.ua.service.mybatis.impl.AsyncMybatisUserService;
 import hbv.com.ua.util.HttpExchangeUtil;
 import io.undertow.server.HttpServerExchange;
@@ -20,6 +20,6 @@ public class UserController extends AbstractHttpController {
 
 	@HttpMethod( type = HttpMethod.HttpMethodType.POST )
 	public void create( HttpServerExchange httpServerExchange ) {
-		mybatisUserService.create( HttpExchangeUtil.getFormBody( httpServerExchange, UserDomain.class ) );
+		mybatisUserService.create( HttpExchangeUtil.getFormBody( httpServerExchange, User.class ) );
 	}
 }

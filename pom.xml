@@ -16,8 +16,8 @@
         <spring.version>5.3.1</spring.version>
         <mybatis.version>3.5.6</mybatis.version>
         <mybatis.spring.version>2.0.6</mybatis.spring.version>
-        <flyway.version>7.3.0</flyway.version>
         <postgresql.driver.version>42.2.18</postgresql.driver.version>
+        <liquibase.version>4.2.2</liquibase.version>
         <spring.security.version>5.4.2</spring.security.version>
         <lombok.version>1.18.16</lombok.version>
         <hikari.version>3.4.5</hikari.version>
@@ -104,14 +104,14 @@
             <version>${mybatis.spring.version}</version>
         </dependency>
 
-        <!--flyway-->
+        <!--liquibase-->
         <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-            <version>${flyway.version}</version>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>${liquibase.version}</version>
         </dependency>
 
-    <!--spring security-->
+        <!--spring security-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>

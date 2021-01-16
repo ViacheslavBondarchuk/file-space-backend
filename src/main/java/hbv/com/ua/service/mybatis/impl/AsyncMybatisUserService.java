@@ -1,7 +1,7 @@
 package hbv.com.ua.service.mybatis.impl;
 
-import hbv.com.ua.domain.Authority;
-import hbv.com.ua.domain.UserDomain;
+import hbv.com.ua.model.Authority;
+import hbv.com.ua.model.User;
 import hbv.com.ua.repository.mybatis.impl.UserRepository;
 import hbv.com.ua.service.mybatis.AbstractAsyncMybatisService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Collections;
 
 @Service
-public class AsyncMybatisUserService extends AbstractAsyncMybatisService< UserDomain, Long, UserRepository > implements UserDetailsService {
+public class AsyncMybatisUserService extends AbstractAsyncMybatisService<User, Long, UserRepository > implements UserDetailsService {
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@Autowired
@@ -29,15 +29,15 @@ public class AsyncMybatisUserService extends AbstractAsyncMybatisService< UserDo
 
 	@Override
 	@Transactional
-	public void create( UserDomain userDomain ) {
-		userDomain.setPassword( bCryptPasswordEncoder.encode( userDomain.getPassword( ) ) );
-		userDomain.setEnabled( true );
-		userDomain.setAccountNonLocked( true );
-		userDomain.setAccountNonExpired( true );
-		userDomain.setCredentialsNonExpired( true );
-		userDomain.setAuthorities( Collections.singleton( Authority.USER ) );
+	public void create( User user) {
+		user.setPassword( bCryptPasswordEncoder.encode( user.getPassword( ) ) );
+		user.setEnabled( true );
+		user.setAccountNonLocked( true );
+		user.setAccountNonExpired( true );
+		user.setCredentialsNonExpired( true );
+		user.setAuthorities( Collections.singleton( Authority.USER ) );
 
-		super.create( userDomain );
+		super.create(user);
 	}
 
 	@Override

@@ -3,7 +3,7 @@
 
 <mapper namespace="hbv.com.ua.repository.mybatis.impl.UserRepository">
 
-    <insert id="create" parameterType="hbv.com.ua.domain.UserDomain">
+    <insert id="create" parameterType="hbv.com.ua.model.User">
 
     </insert>
 

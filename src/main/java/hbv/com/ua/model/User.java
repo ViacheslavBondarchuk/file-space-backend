@@ -1,4 +1,4 @@
-package hbv.com.ua.domain;
+package hbv.com.ua.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +12,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDomain implements UserDetails {
+public class User implements UserDetails {
     private Long id;
     private String username;
     private String password;
