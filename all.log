@@ -1,105 +1,106 @@
-2021-01-17 01:48:32.546 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3081f72c
-2021-01-17 01:48:32.704 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/annotation/HttpController.class]
-2021-01-17 01:48:32.709 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/controller/impl/DriverController.class]
-2021-01-17 01:48:32.710 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/controller/impl/UserController.class]
-2021-01-17 01:48:32.710 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/filter/HeaderHttpFilter.class]
-2021-01-17 01:48:32.714 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/service/mybatis/impl/AsyncMybatisUserService.class]
-2021-01-17 01:48:32.739 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 25 bean definitions from class path resource [context/application-context.xml]
-2021-01-17 01:48:32.764 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2021-01-17 01:48:32.799 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
-2021-01-17 01:48:32.820 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sourcesPlaceholderConfigurer'
-2021-01-17 01:48:32.867 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2021-01-17 01:48:32.870 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/repository/mybatis/impl/UserRepository.class]
-2021-01-17 01:48:32.871 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userRepository' and 'hbv.com.ua.repository.mybatis.impl.UserRepository' mapperInterface
-2021-01-17 01:48:32.872 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.username' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.873 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.password' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.873 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.url' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.873 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.host' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.873 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.port' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.873 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.db' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.873 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.config.driver' in PropertySource 'localProperties' with value of type String
-2021-01-17 01:48:32.874 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-2021-01-17 01:48:32.875 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-2021-01-17 01:48:32.875 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
-2021-01-17 01:48:32.877 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2021-01-17 01:48:32.878 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2021-01-17 01:48:32.881 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2021-01-17 01:48:32.899 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'driverController'
-2021-01-17 01:48:32.902 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2021-01-17 01:48:32.903 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
-2021-01-17 01:48:32.911 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
-2021-01-17 01:48:32.924 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'asyncMybatisUserService'
-2021-01-17 01:48:32.927 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepository'
-2021-01-17 01:48:32.931 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
-2021-01-17 01:48:32.932 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariDataSource'
-2021-01-17 01:48:32.936 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'pooledDataSource'
-2021-01-17 01:48:32.950 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-17 01:48:32.950 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-17 01:48:32.950 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-17 01:48:32.950 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-2021-01-17 01:48:33.007 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/mybatis/sql-config.xml]'
-2021-01-17 01:48:33.041 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/config/mybatis/mapper/user-mapper.xml]'
-2021-01-17 01:48:33.049 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'asyncMybatisUserService' via constructor to bean named 'userRepository'
-2021-01-17 01:48:33.052 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'bCryptPasswordEncoder'
-2021-01-17 01:48:33.096 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
-2021-01-17 01:48:33.118 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'headerHttpFilter'
-2021-01-17 01:48:33.120 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertiesUtil'
-2021-01-17 01:48:33.122 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionTemplate'
-2021-01-17 01:48:33.124 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTransactionManager'
-2021-01-17 01:48:33.131 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springLiquibase'
-2021-01-17 01:48:33.152 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
-2021-01-17 01:48:33.153 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
-2021-01-17 01:48:33.153 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
-2021-01-17 01:48:33.153 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
-2021-01-17 01:48:33.154 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
-2021-01-17 01:48:33.154 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
-2021-01-17 01:48:33.154 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
-2021-01-17 01:48:33.154 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................org.apache.ibatis.datasource.pooled.PooledDataSource@1bf39d06
-2021-01-17 01:48:33.154 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
-2021-01-17 01:48:33.154 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
-2021-01-17 01:48:33.155 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
-2021-01-17 01:48:33.155 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName.................none
-2021-01-17 01:48:33.155 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
-2021-01-17 01:48:33.155 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
-2021-01-17 01:48:33.155 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
-2021-01-17 01:48:33.155 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................none
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
-2021-01-17 01:48:33.156 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
-2021-01-17 01:48:33.157 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
-2021-01-17 01:48:33.158 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
-2021-01-17 01:48:33.158 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
-2021-01-17 01:48:33.158 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................none
-2021-01-17 01:48:33.158 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
-2021-01-17 01:48:33.158 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-01-17 01:48:34.043 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 83534488.
-2021-01-17 01:48:34.215 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4faa298
-2021-01-17 01:48:34.217 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-01-17 01:48:34.317 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
-2021-01-17 01:48:35.013 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2113063491.
-2021-01-17 01:48:35.014 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7df2ca43
-2021-01-17 01:48:35.745 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1505973606.
-2021-01-17 01:48:35.745 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59c35566
-2021-01-17 01:48:36.361 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 558980852.
-2021-01-17 01:48:36.361 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21515ef4
-2021-01-17 01:48:37.022 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 286050750.
-2021-01-17 01:48:37.022 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@110cc9be
-2021-01-17 01:48:37.296 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'undertowContainer'
-2021-01-17 01:48:37.319 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-2021-01-17 01:48:37.329 [main] INFO  io.undertow - starting server: Undertow - 2.1.0.Final
-2021-01-17 01:48:37.338 [main] INFO  org.xnio - XNIO version 3.8.0.Final
-2021-01-17 01:48:37.351 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
-2021-01-17 01:48:37.374 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2021-01-17 01:48:37.379 [XNIO-1 I/O-4] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.EPollSelectorImpl@12bd35f8
-2021-01-17 01:48:37.379 [XNIO-1 I/O-1] DE
+2021-01-17 16:15:39.310 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d6c53fc
+2021-01-17 16:15:39.471 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/annotation/HttpController.class]
+2021-01-17 16:15:39.476 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/controller/impl/DriverController.class]
+2021-01-17 16:15:39.476 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/controller/impl/UserController.class]
+2021-01-17 16:15:39.481 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/service/mybatis/impl/AsyncMybatisUserService.class]
+2021-01-17 16:15:39.503 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 23 bean definitions from class path resource [context/application-context.xml]
+2021-01-17 16:15:39.522 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-01-17 16:15:39.549 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-01-17 16:15:39.569 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sourcesPlaceholderConfigurer'
+2021-01-17 16:15:39.613 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-01-17 16:15:39.615 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/hbv/com/ua/repository/mybatis/impl/UserRepository.class]
+2021-01-17 16:15:39.615 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userRepository' and 'hbv.com.ua.repository.mybatis.impl.UserRepository' mapperInterface
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.username' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.password' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.url' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.host' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.port' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.postgres.db' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.617 [main] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'mybatis.config.driver' in PropertySource 'localProperties' with value of type String
+2021-01-17 16:15:39.618 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-01-17 16:15:39.619 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-01-17 16:15:39.619 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2021-01-17 16:15:39.620 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-01-17 16:15:39.621 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-01-17 16:15:39.623 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-01-17 16:15:39.638 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'driverController'
+2021-01-17 16:15:39.641 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2021-01-17 16:15:39.642 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2021-01-17 16:15:39.650 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
+2021-01-17 16:15:39.663 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'asyncMybatisUserService'
+2021-01-17 16:15:39.665 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepository'
+2021-01-17 16:15:39.669 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
+2021-01-17 16:15:39.670 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariDataSource'
+2021-01-17 16:15:39.674 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'pooledDataSource'
+2021-01-17 16:15:39.687 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-17 16:15:39.687 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-17 16:15:39.687 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-17 16:15:39.688 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2021-01-17 16:15:39.741 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/mybatis/sql-config.xml]'
+2021-01-17 16:15:39.773 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/home/viacheslavbondarchuk/Projects/file-space-backend/target/classes/config/mybatis/mapper/user-mapper.xml]'
+2021-01-17 16:15:39.781 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'asyncMybatisUserService' via constructor to bean named 'userRepository'
+2021-01-17 16:15:39.823 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2021-01-17 16:15:39.843 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertiesUtil'
+2021-01-17 16:15:39.845 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionTemplate'
+2021-01-17 16:15:39.847 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTransactionManager'
+2021-01-17 16:15:39.852 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springLiquibase'
+2021-01-17 16:15:39.874 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2021-01-17 16:15:39.875 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2021-01-17 16:15:39.875 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2021-01-17 16:15:39.876 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2021-01-17 16:15:39.876 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2021-01-17 16:15:39.876 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2021-01-17 16:15:39.876 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2021-01-17 16:15:39.876 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................org.apache.ibatis.datasource.pooled.PooledDataSource@4ca8dbfa
+2021-01-17 16:15:39.876 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2021-01-17 16:15:39.877 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2021-01-17 16:15:39.877 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2021-01-17 16:15:39.877 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName.................none
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2021-01-17 16:15:39.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................none
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2021-01-17 16:15:39.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................none
+2021-01-17 16:15:39.880 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2021-01-17 16:15:39.881 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-17 16:15:40.782 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2058127492.
+2021-01-17 16:15:40.959 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7aac8884
+2021-01-17 16:15:40.961 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-17 16:15:41.061 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2021-01-17 16:15:41.717 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 880540651.
+2021-01-17 16:15:41.718 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@347bfbeb
+2021-01-17 16:15:42.398 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 273551639.
+2021-01-17 16:15:42.399 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@104e1117
+2021-01-17 16:15:43.104 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1754649148.
+2021-01-17 16:15:43.105 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6895d23c
+2021-01-17 16:15:43.803 [HikariPool-1 connection adder] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2064161451.
+2021-01-17 16:15:43.804 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b089aab
+2021-01-17 16:15:44.117 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'undertowContainer'
+2021-01-17 16:15:44.148 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2021-01-17 16:15:44.154 [main] INFO  io.undertow - starting server: Undertow - 2.1.0.Final
+2021-01-17 16:15:44.160 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-01-17 16:15:44.168 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 16:15:44.185 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-01-17 16:15:44.195 [XNIO-1 I/O-2] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.EPollSelectorImpl@6f9e7dbf
+2021-01-17 16:15:44.195 [XNIO-1 I/O-3] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.EPollSelectorImpl@18771401
+2021-01-17 16:15:44.195 [XNIO-1 I/O-1] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.EPollSelectorImpl@42d0d248
+2021-01-17 16:15:44.195 [XNIO-1 I/O-5] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-5', selector sun.nio.ch.EPollSelectorImpl@6b9e515e
+2021-01-17 16:15:44.196 [XNIO-1 I/O-7] DEBUG org.xnio.nio - Started channel thread 'XNIO-1 I/O-7', selector sun.nio.ch.EPollSelectorImpl@60e0ae7e
+2021-01-17 16:15:44.195 [XNIO-1 I/O-4] DEBUG org.xnio.nio - Star

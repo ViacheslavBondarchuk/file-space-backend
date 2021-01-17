@@ -9,17 +9,17 @@ import hbv.com.ua.util.HttpExchangeUtil;
 import io.undertow.server.HttpServerExchange;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@HttpController( path = "/users" )
+@HttpController(path = "/users")
 public class UserController extends AbstractHttpController {
-	private AsyncMybatisUserService mybatisUserService;
+    private AsyncMybatisUserService mybatisUserService;
 
-	@Autowired
-	public void setMybatisUserService( AsyncMybatisUserService mybatisUserService ) {
-		this.mybatisUserService = mybatisUserService;
-	}
+    @Autowired
+    public void setMybatisUserService(AsyncMybatisUserService mybatisUserService) {
+        this.mybatisUserService = mybatisUserService;
+    }
 
-	@HttpMethod( type = HttpMethod.HttpMethodType.POST )
-	public void create( HttpServerExchange httpServerExchange ) {
-		mybatisUserService.create( HttpExchangeUtil.getFormBody( httpServerExchange, User.class ) );
-	}
+    @HttpMethod(type = HttpMethod.HttpMethodType.POST, requireAuthenticate = false)
+    public void create(HttpServerExchange httpServerExchange) {
+        mybatisUserService.create(HttpExchangeUtil.getFormBody(httpServerExchange, User.class));
+    }
 }

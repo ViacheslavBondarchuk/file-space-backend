@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet id="driver-vehicle-changelog" author="Viacheslav Bondarchuk">
+
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="drivers"/>
+                <tableExists tableName="vehicles"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="drivers">
+            <column name="id" type="serial" autoIncrement="true">
+                <constraints primaryKey="true" unique="true" nullable="false"/>
+            </column>
+            <column name="firstname" type="text">
+                <constraints nullable="true" unique="false"/>
+            </column>
+            <column name="lastname" type="text">
+                <constraints nullable="true" unique="false"/>
+            </column>
+            <column name="middlename" type="text">
+                <constraints nullable="true" unique="false"/>
+            </column>
+            <column name="phone" type="text">
+                <constraints nullable="true" unique="false"/>
+            </column>
+            <column name="email" type="text">
+                <constraints nullable="true" unique="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="vehicles">
+            <column name="id" type="serial" autoIncrement="true">
+                <constraints primaryKey="true" unique="true" nullable="false"/>
+            </column>
+            <column name="driver_id" type="bigint">
+                <constraints foreignKeyName="id" references="drivers" validateForeignKey="true" deleteCascade="true"/>
+            </column>
+            <column name="mark" type="text">
+                <constraints nullable="true" unique="true"/>
+            </column>
+            <column name="model" type="text">
+                <constraints nullable="true" unique="true"/>
+            </column>
+            <column name="number" type="text">
+                <constraints nullable="true" unique="true"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

@@ -64,6 +64,4 @@
     <!--undertow container-->
     <bean id="undertowContainer" class="hbv.com.ua.container.UndertowContainer" init-method="init" destroy-method="destroy"/>
 
-    <!--bCryptPasswordEncoder-->
-    <bean id="bCryptPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 </beans>

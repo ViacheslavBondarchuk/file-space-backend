@@ -5,11 +5,11 @@ import hbv.com.ua.repository.mybatis.CRUD;
 
 import java.util.Optional;
 
-public interface UserRepository extends CRUD<User, Long > {
+public interface UserRepository extends CRUD<User, Long> {
 
-	Optional<User> findByUsername(final String username );
+    Optional<User> findByUsername(final String username);
 
-	Optional<User> findByEmail(final String email );
+    Optional<User> findByEmail(final String email);
 
-	Optional<User> findByPhone(final String phone );
+    Optional<User> findByPhone(final String phone);
 }
